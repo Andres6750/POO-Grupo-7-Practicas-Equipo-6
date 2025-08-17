@@ -14,7 +14,7 @@ CONFORMADO POR:
 
 322044339 | Contreras Martínez Alan Gael  
 
-Gómez Rosales Roberto Josué  
+322094152 | Gómez Rosales Roberto Josué  
 
 322114461 | Guzmán Fernández Andrés Rogelio   
 
