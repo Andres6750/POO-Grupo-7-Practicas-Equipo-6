@@ -16,9 +16,9 @@ CONFORMADO POR:
 
 Gómez Rosales Roberto Josué  
 
-Guzmán Fernández Andrés Rogelio   
+322114461 | Guzmán Fernández Andrés Rogelio   
 
 425093384 | Martínez Ruiz Abdiel Barush  
 
-Santos Mateos Oswaldo  
+322150984 | Santos Mateos Oswaldo  
 
