@@ -57,7 +57,7 @@ public class Menu{
     public static void Fibonacci(int n) { //Método para la serie de Fibonacci
         int ant = 0, fib = 1;
         for(int i = 0; i < n; i++) {
-            System.out.print(fib + "->");
+            System.out.print(ant + "->");
             int aux = fib;
             fib += ant;
             ant = aux;
@@ -77,4 +77,5 @@ public class Menu{
         }
         System.out.print(1); //Imprime el número donde termina la sucesión
     }
+
 }
