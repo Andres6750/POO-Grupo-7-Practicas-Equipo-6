@@ -7,7 +7,7 @@ public class PascalRecursivo{
         System.out.println("Ingresa el numero de filas con el que quieres que se creé el triangulo");
         int filas = e.nextInt();
         System.out.println("");
-        System.out.println("El triangulo con " + filas + "filas es: ");
+        System.out.println("El triangulo con " + filas + " filas es: ");
         System.out.println("");
 
         for (int i=0; i<filas;i++){ // Crea el triangulo y lo va imprimiendo 
