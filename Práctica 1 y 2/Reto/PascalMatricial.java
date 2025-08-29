@@ -7,7 +7,7 @@ public class PascalMatricial{
         System.out.println("Ingresa el numero de filas:");
         int filas = e.nextInt();
         System.out.println("");
-        System.out.println("El triangulo con " + filas + "filas es: ");
+        System.out.println("El triangulo con " + filas + " filas es: ");
         System.out.println("");
 
         int[][] arreglo = new int[filas][(filas * 2) + 1];
@@ -34,7 +34,7 @@ public class PascalMatricial{
         for (int m = 0; m < filas; m++) {
             for (int n = 0; n < (filas * 2 + 1); n++) {
                 if (arreglo[m][n] == 0) {
-                    System.out.print(" ");
+                    System.out.print("  ");
                 } else {
                     System.out.print(arreglo[m][n]);
                 }
