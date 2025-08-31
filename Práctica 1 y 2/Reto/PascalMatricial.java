@@ -6,9 +6,9 @@ public class PascalMatricial{
         System.out.println("Hola usuario, este código crea el triangulo de Pascal");
         System.out.println("Ingresa el numero de filas:");
         int filas = e.nextInt();
-        filas +=1;
         System.out.println("");
         System.out.println("El triangulo con " + filas + " filas es: ");
+        filas +=1;
         System.out.println("");
 
         int[][] arreglo = new int[filas][(filas * 2) + 1];
