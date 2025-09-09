@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.event.*;
 import java.math.*;
-import java.util.Scanner;
 
 class Mensajes {
     public double distanciaPuntos;
@@ -37,15 +36,14 @@ class Ventana extends JFrame {
 
 public class Practica4 {
     public static void main(String[] args) {
-        Scanner inp = new Scanner(System.in);
-        System.out.println("Ingresa el primer componente del primer vector (x)");
-        double x1 = inp.nextDouble();
-        System.out.println("Ingresa el segundo componente del primer vector (y)");
-        double y1 = inp.nextDouble();
-        System.out.println("Ingresa el primer componente del segundo vector (x)");
-        double x2 = inp.nextDouble();
-        System.out.println("Ingresa el segundo componente del segundo vector (y)");
-        double y2 = inp.nextDouble();
+        System.out.println("Primer Vector");
+        System.out.println(args[0] + " , " + args[1]);
+        double x1 = Double.parseDouble(args[0]);
+        double y1 = Double.parseDouble(args[1]);
+        System.out.println("Segundo vector");
+        System.out.println(args[2] + " , " + args[3]);
+        double x2 = Double.parseDouble(args[2]);
+        double y2 = Double.parseDouble(args[3]);
         double distanciaPuntos = distancia(x1, y1, x2, y2);
         Mensajes controlador = new Mensajes();
         controlador.distanciaPuntos = distanciaPuntos;
