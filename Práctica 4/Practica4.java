@@ -1,13 +1,13 @@
 import javax.swing.*;
 import java.awt.event.*;
 
-public class Mensajes {
+class Mensajes {
     public String mensaje() {
         return "Hola! tengo vida! c:";
     }   
 }
 
-public class Ventana extends JFrame {
+class Ventana extends JFrame {
     JButton boton;
     Mensajes controlador;
 

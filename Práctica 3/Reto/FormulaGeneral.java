@@ -1,4 +1,4 @@
-public class Token3 {
+public class FormulaGeneral {
     public static void main(String [] args) {
         System.out.print("La solución a la ecuacion de segundo grado: ");
         System.out.println(args[0]+"x^2 + "+args[1]+"x + "+args[2]);
