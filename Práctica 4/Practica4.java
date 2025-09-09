@@ -18,7 +18,7 @@ class Ventana extends JFrame {
         this.controlador = controlador;
 
         setTitle("Distancia entre puntos");
-        setSize(300, 200);
+        setSize(600, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
@@ -46,8 +46,9 @@ public class Practica4 {
         double x2 = inp.nextDouble();
         System.out.println("Ingresa el segundo componente del segundo vector (y)");
         double y2 = inp.nextDouble();
-        Mensajes controlador = new Mensajes();
         double distanciaPuntos = distancia(x1, y1, x2, y2);
+        Mensajes controlador = new Mensajes();
+        controlador.distanciaPuntos = distanciaPuntos;
 
         Ventana ventana = new Ventana(controlador);
         ventana.setVisible(true);
