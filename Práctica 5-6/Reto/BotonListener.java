@@ -20,7 +20,7 @@ public class BotonListener implements ActionListener {
             } else {
                 gui.getPantalla().setText(gui.getPantalla().getText() + texto);
             }
-        } else if (texto.equals("C")) {
+        } else if (texto.equals("Borrar")) {
             gui.getPantalla().setText("0");
             gui.setNuevaOperacion(true);
         } else if (texto.equals("=")) {

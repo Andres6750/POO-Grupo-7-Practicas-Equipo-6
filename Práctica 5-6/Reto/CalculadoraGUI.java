@@ -12,7 +12,7 @@ public class CalculadoraGUI extends JFrame {
     public CalculadoraGUI() {
         calculadora = new Calculadora();
 
-        setTitle("Calculadora Gráfica");
+        setTitle("Calculadora en ventana emergente");
         setSize(300, 400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
@@ -26,7 +26,7 @@ public class CalculadoraGUI extends JFrame {
             "7","8","9","/",
             "4","5","6","*",
             "1","2","3","-",
-            "0","C","=","+"
+            "0","Borrar","=","+"
         };
 
         for (String texto : botones) {
