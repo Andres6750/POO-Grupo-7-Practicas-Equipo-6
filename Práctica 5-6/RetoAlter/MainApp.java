@@ -83,11 +83,12 @@ public class MainApp {
                             break;
                         //Si no suceden los casos anteriores, significa que estamos ingresando un valor número 0-9
                         default:
-                            //Extrae el valor de la pantalla, si era un 0 (es decir, la pantalla estaba limpia)
-                            //no agrega ese cero. Esto evita ceros antes de números, por ejemplo, 07, 003, etc.
+                            //Extrae el valor de la pantalla, si era un 0 (es decir, la pantalla estaba limpia) o es Syntax Error, o la bandera 
+                            //limpiarpantalla esta en true (lo último que nos dio la calculadora es un resultado),
+                            //no agrega ese cero y resetea la pantalla. Esto evita ceros antes de números, después de un resultado, o de un error
                             if (actual.equals("0") || actual.equals("Syntax Error") || limpiarPantalla) {
                                 vista.getPantalla().setText(txt);
-                                limpiarPantalla = false; // reset
+                                limpiarPantalla = false; // resetea la bandera (false)
                             } else {
                                 //Concatena el número presionado
                                 vista.getPantalla().setText(actual + txt);
