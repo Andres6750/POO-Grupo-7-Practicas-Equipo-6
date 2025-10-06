@@ -1,5 +1,5 @@
 //Empaquetado
-package RetoAlter;
+package Reto;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;

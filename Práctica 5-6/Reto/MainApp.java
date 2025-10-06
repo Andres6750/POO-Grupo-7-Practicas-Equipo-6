@@ -1,5 +1,5 @@
 //Empaquetado
-package RetoAlter;
+package Reto;
 
 import javax.swing.*;
 
