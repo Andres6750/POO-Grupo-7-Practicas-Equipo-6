@@ -1,7 +1,7 @@
 package Reto;
 
 public abstract class Material {
-    //Atributos abstractos
+    //Atributos
     private String titulo;
     private String autor;
     private int anio;
@@ -16,7 +16,7 @@ public abstract class Material {
     }
 
     public int getAnio() {
-        return anio;
+        return anio;    
     }
 
     //Setters
@@ -32,7 +32,12 @@ public abstract class Material {
         this.anio = anio;
     }
 
+    //Constructores (uno vacío y otro completo)
+
     //Constructor
+    public Material() {
+    }
+
     public Material(String titulo, String autor, int anio) {
         this.titulo = titulo;
         this.autor = autor;
