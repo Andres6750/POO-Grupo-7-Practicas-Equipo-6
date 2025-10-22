@@ -42,9 +42,13 @@ public class EmpleadoPorHoras extends Empleado {
     //Sobreescribir ingresos
 
      @Override
-     public double ingresos(double salario, int horas){
-        double salarioFinal;
-        int horasN, horasE;
+     public double ingresos(){
+        salario = getSalario();
+        horas = getHoras();
+
+        double salarioFinal = 0;
+
+        int horasE;
         if (horas <= 40){
             salarioFinal += (salario * horas);
         }
@@ -61,6 +65,6 @@ public class EmpleadoPorHoras extends Empleado {
 
      @Override
      public String toString(){
-        return "----Empleado Por Horas----\nNombre: " + getNombre() + "\n Apellido Paterno: " + getaPaterno() + "\nNSS: " + getNss() + "\nSalario por hora: " + getSalario() + "\n Horas trabajadas: " + getHoras() + "\n Ingresos: " + ingresos(getSalario(), getHoras());
+        return "----Empleado Por Horas----\nNombre: " + getNombre() + "\n Apellido Paterno: " + getaPaterno() + "\nNSS: " + getNss() + "\nSalario por hora: " + getSalario() + "\n Horas trabajadas: " + getHoras() + "\n Ingresos: " + ingresos();
     }
 }

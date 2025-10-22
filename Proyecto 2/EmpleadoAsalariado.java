@@ -26,15 +26,14 @@ public class EmpleadoAsalariado extends Empleado {
     //Sobreescribir ingresos
 
      @Override
-     public double ingresos(double salarioSemanal){
+     public double ingresos(){
         double ingresos;
         ingresos = salarioSemanal;
-
         return ingresos;
      }
 
      @Override
      public String toString(){
-        return "----Empleado Asalariado----\nNombre: " + getNombre() + "\n Apellido Paterno: " + getaPaterno() + "\nNSS: " + getNss() + "\n Ingresos: " + ingresos(getSalarioSemanal());
+        return "----Empleado Asalariado----\nNombre: " + getNombre() + "\n Apellido Paterno: " + getaPaterno() + "\nNSS: " + getNss() + "\n Ingresos: " + ingresos();
     }
 }
