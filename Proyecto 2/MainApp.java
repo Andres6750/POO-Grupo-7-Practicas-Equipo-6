@@ -2,8 +2,6 @@ public class MainApp {
     public static void main(String[] args) {
         Empleado e1;
 
-        System.out.println("Empleado 1");
-
         //Lo definimos como Empleado Asalariado
 
         e1 = new EmpleadoAsalariado("Alan", "Gael", 1001, 1000);
