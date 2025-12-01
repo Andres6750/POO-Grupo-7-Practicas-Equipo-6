@@ -23,7 +23,6 @@ flutter:
     - assets/trainers/
     - assets/audio/
 
-    
   fonts:
     - family: PKMN
       fonts:

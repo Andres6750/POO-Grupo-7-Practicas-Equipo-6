@@ -12,5 +12,4 @@ final Map<String, Color> colorTipo = {
   "Siniestro": Color(0xFF775544),
   "Normal": Color(0xFFAAAA99),
   "Fantasma": Color(0xFF6666BB),
-  // agrega más según tus tipos
 };

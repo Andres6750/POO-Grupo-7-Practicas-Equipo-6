@@ -4,7 +4,7 @@
 // 2.0 = súper eficaz
 // 0.5 = poco eficaz
 // 0.0 = no afecta
-// 1.0 = neutral (no se especifica)
+// 1.0 = neutral
 
 final Map<String, Map<String, double>> tablaEfectividad = {
   'Normal': {

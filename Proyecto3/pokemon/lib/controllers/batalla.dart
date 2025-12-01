@@ -73,7 +73,6 @@ enum TipoEvento {
   aplicarCuracionJugador,
 }
 
-
 // =========================================================
 //  EVENTO INDIVIDUAL
 // =========================================================
@@ -519,7 +518,6 @@ class ControlBatalla {
         return "alterado";
     }
   }
-
 
   // =========================================================
   //      EFECTOS DE ESTADO AL FINAL DEL TURNO
