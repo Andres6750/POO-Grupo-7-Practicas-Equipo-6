@@ -60,6 +60,9 @@ enum TipoEvento {
   aplicarEstadoJugador,
   aplicarEstadoEnemigo,
 
+  aplicarDescongeladoJugador,
+  aplicarDescongeladoEnemigo,
+
   //Usar item
   usarItemJugador,
 
@@ -573,6 +576,16 @@ class ControlBatalla {
     switch (p.estado) {
 
       case EstadoAlterado.congelado:
+        // 20% de descongelarse
+        if (_rng.nextInt(100) < 20) {
+          return EventoBatalla(
+            esJugador ? TipoEvento.aplicarDescongeladoJugador
+                      : TipoEvento.aplicarDescongeladoEnemigo,
+            mensaje: "${p.nombre} se descongeló!",
+          );
+        }
+
+        // 80% sigue congelado
         return EventoBatalla(
           esJugador ? TipoEvento.animParalizadoJugador
                     : TipoEvento.animParalizadoEnemigo,

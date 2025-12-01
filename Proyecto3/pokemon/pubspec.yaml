@@ -1,0 +1,31 @@
+name: pokemon_fi
+description: "Pokemon Edicion FI"
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  just_audio: ^0.9.36
+  audioplayers: ^5.2.0
+  shared_preferences: ^2.3.2
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/sprites/
+    - assets/fonts/
+    - assets/logos/
+    - assets/backgrounds/
+    - assets/trainers/
+    - assets/audio/
+
+    
+  fonts:
+    - family: PKMN
+      fonts:
+        - asset: assets/fonts/pkmn.ttf
+
